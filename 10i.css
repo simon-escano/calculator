@@ -1,0 +1,140 @@
+*{
+  transition: background-color 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+body, html {
+  height: 100%;
+}
+
+body{
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  height: 62.5px;
+  width: 62.5px;
+  border: none;
+  border-radius: 23px;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #17181a;
+  border-radius: 30px;
+  width: 330px;
+  aspect-ratio: 9/16;
+  padding: 22px 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.calculation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 286px;
+  height: 100%;
+  padding: 30px 0px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  background-color: transparent;
+  color: white;
+  font-size: 55px;
+  text-align: right;
+  width: 100%;
+  border: none;
+  outline: none;
+} .input-small {
+  font-size: 40px;
+} .input-smaller {
+  font-size: 29px;
+} .input-smallest {
+  font-size: 21px;
+}
+
+.output {
+  background-color: transparent;
+  color: #878889;
+  font-size: 35px;
+  text-align: right;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.output-ui {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 10px;
+}
+.backspace {
+  width: 32px;
+  cursor: pointer;
+} .backspace:hover {
+  filter: brightness(175%);
+}
+.outline {
+  height: 6px;
+  width: 100%;
+  background-color: #222427;
+  border-radius: 7.5px;
+}
+
+.number-pad {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.row {
+  display: flex;
+  column-gap: 12px;
+}
+
+.clr {
+  background-color: #2d191e;
+  color: #F6444E;
+} .clr:hover {
+  background-color: #461a25;
+}
+
+.num, .num-0 {
+  background-color: #222427;
+} .num:hover, .num-0:hover {
+  background-color: #37393d;
+}
+
+.num-0 {
+  width: 137px;
+}
+
+.ops {
+  background-color: #ff9500;
+} .ops:hover {
+  background-color: #fcb95b;
+}
+
+.eval {
+  background-color: #2ec973;
+} .eval:hover {
+  background-color: #41ff97;
+}
+

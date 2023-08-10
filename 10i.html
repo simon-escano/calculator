@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="10i.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculation">
+        <div class="numbers">
+          <input class="input" type="text" readonly>
+          <input class="output" type="text" readonly>
+        </div>
+        <div class="output-ui">
+          <img onclick="erase();" class="backspace" src="images/backspace.svg">
+          <div class="outline"></div>
+        </div>
+      </div>
+
+      <div class="number-pad">
+        <div class="row">
+          <button class="clr" onclick=" updateCalculation('Clear'); localStorage.removeItem('calculation');">C</button>
+          <button class="num" onclick="updateCalculation('(');">&#40;</button>
+          <button class="num" onclick="updateCalculation(')');">&#41;</button>
+          <button class="ops" onclick="updateCalculation(' / ');">/</button>
+        </div>
+    
+        <div class="row">
+          <button class="num" onclick="updateCalculation('7');">7</button>
+          <button class="num" onclick="updateCalculation('8');">8</button>
+          <button class="num" onclick="updateCalculation('9');">9</button>
+          <button class="ops" onclick="updateCalculation(' * ');">*</button>
+        </div>
+    
+        <div class="row">
+          <button class="num" onclick="updateCalculation('4');">4</button>
+          <button class="num" onclick="updateCalculation('5');">5</button>
+          <button class="num" onclick="updateCalculation('6');">6</button>
+          <button class="ops" onclick="updateCalculation(' - ');">-</button>
+        </div>
+    
+        <div class="row">
+          <button class="num" onclick="updateCalculation('1');">1</button>
+          <button class="num" onclick="updateCalculation('2');">2</button>
+          <button class="num" onclick="updateCalculation('3');">3</button>
+          <button class="ops" onclick="updateCalculation(' + ');">+</button>
+        </div>
+    
+        <div class="row">
+          <button class="num-0" onclick="updateCalculation('0');">0</button>
+          <button class="num" onclick="updateCalculation('.');">.</button>
+          <button class="eval" onclick="
+            updateCalculation('=');
+            localStorage.removeItem('calculation');
+          ">=</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="10i.js"></script>
+  </body>
+</html>
